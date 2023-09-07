@@ -1,0 +1,608 @@
+body{
+   margin: 0;
+   padding: 0;
+}
+
+main{
+	left: 6%;
+}
+
+.hed-logo{
+     width: 62px;
+     height: 62px;
+}
+
+.navg{
+	height: 64px;
+}
+.bg-transparent{
+	background: transparent;
+	outline: none;
+	border: none;
+	color: white;
+}
+
+.col-4{
+    
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+   
+}
+ 
+.ser-br{
+	background-color:#12193e ;
+/*	border-radius: 15% 15% 15% 15%;*/
+    border-radius: 15px;
+}
+
+.background{
+    background-color: #0c1027;
+    background-attachment: fixed;
+}
+
+  .sm-box{
+  	width: 30%;
+ 	height: 200px;
+ 	margin-top:23px ;
+ 	 z-index: 2;
+  }
+  .bg-box{
+  	width: 60%;
+  	height: 250px;
+  	border-radius: 10px;
+  	 z-index: 500;
+  }
+   .sm-box img{
+	 width:100% ;
+	 height: 100%;
+	  border-radius: 10px;
+	 box-shadow: 0px 0px 5px 6px rgba(0, 0, 0, 0.7);
+	
+	}
+
+
+	.bg-box img{
+	 width:100% ;
+	 height: 100%;
+	 border-radius: 10px;
+	 box-shadow: 0px 0px 5px 6px rgba(0, 0, 0, 0.7);
+	
+	}
+
+	.left-hed-img{
+		margin-left: 16px;
+	}
+
+	.right-hed-img {
+		margin-right: 16px;
+	}
+  .hed-image-sec:hover img{
+
+	box-shadow: 0px 0px 5px 6px rgba(189, 195, 199, 0.2);
+	transform: scale(1.1);
+	border-radius: 10px;
+	transition: all 0.4s ease-in-out;
+	 background: rgba(0, 0, 0, 0.5);
+	 overflow: hidden;
+	 
+}
+.hed-image-sec:hover {
+	z-index: 1000;
+ }
+
+.song-cont{
+   position: relative;
+}
+
+.hov-lay{
+	position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+/*    background-color: #80808078;*/
+    visibility: hidden;
+    background-color: lightslategray;
+    opacity: 0.4;
+
+
+}
+
+.song-icon{
+	visibility: hidden;
+}
+
+.song-cont:hover .song-icon {
+    visibility:visible;
+
+}
+
+.song-cont:hover .hov-lay{
+	visibility: visible;
+	transform: scale(1.1);
+	border-radius: 5px;
+}
+
+.song-cont:hover img{
+	transform: scale(1.1);
+	border-radius: 5px;
+}
+
+
+
+/*artist section styling*/
+
+.artst-img{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.artst-hov{
+	background-color: ;
+}
+
+.aa img:hover{
+	backdrop-filter: blur(8px) brightness(80%);
+	z-index: 10;
+	background-color: lightslategray;
+} 
+
+
+/* <!-- category-section-start -->  */
+
+.flayer{
+	width: 120px;
+	height: 70px;
+}
+.slayer{
+	top: -15px;
+	left: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+.tlayer{
+	background-color: #F86F03;
+	top: -22px;
+	left: 18px;
+	width: 85px;
+	height: 115px;
+}
+
+.types-img {
+	width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.div-img{
+	width: 90px;
+	height: 90px;
+}
+
+/*.types-img-div{
+	width: 70px;
+	height: 70px;
+}*/
+
+.types-cont{
+	background-color:#12193e ;
+}
+ .over-lay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	border-radius: 50%;
+}
+.text-on-img{
+	position: absolute;
+	top: 35%;
+	
+	left: 32%;
+
+	z-index: 10;
+}
+
+.text-on-img1{
+	position: absolute;
+	top: 35%;
+	left: 20%;
+	z-index: 10;
+}
+
+/* <!-- category-section-end -->  */
+
+/* <!-- song type-start -->*/
+
+.song-type-image img{
+	width: 100%;
+	height: 100%;
+    object-fit: cover;
+    transition:  0.4s ease-in-out;
+
+
+}
+.song-type-image{
+	overflow: hidden;
+}
+.f-img-back1{
+/*   background-color: #C9804B;*/
+background-color: darkorange;
+   opacity: 0.5;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.f-img-back2{
+
+ background-color: #3E7CE7;
+   opacity: 0.5;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.song-type-image-text1{
+	position: absolute;
+	left: 40%;
+	top: 40%;
+	font-size: 1.5rem;
+   font-weight: 600;
+
+}
+
+.song-type-image-text2{
+	position: absolute;
+	left: 30%;
+	top: 40%;
+	font-size: 1.5rem;
+   font-weight: 600;
+
+}
+.f-img-back3{
+
+ background-color: #8C6E9C;
+   opacity: 0.5;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.hov-typ{
+	transition: all 1s ease-in-out;
+}
+.hov-typ:hover{
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.hov-typ:hover img{
+	
+	transform: scale(1.2);
+	overflow: hidden;
+}
+.4typs{
+	pa
+}
+
+/* <!-- song type-end -->*/
+
+
+
+/*song-col-hindi*/
+
+.song-col{
+	width: 110px;
+	height: 110px;
+}
+.song-col img{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+/*right side section*/
+
+/*heading Queue start*/
+
+.col{
+
+ color: #436A7C;
+}
+
+.right-img{
+	width: 65px;
+	height: 65px;
+}
+
+.right-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.right-song-bg{
+	width: 100%;
+	height: 100%;
+	  background: rgba(0,0,0,.6);
+     left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s ease-in-out;
+    width: 100%;
+    z-index: 1;
+}
+
+.right-song-icon{
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	visibility: hidden;
+	z-index: 10;
+}
+.btn-img-sng:hover .right-song-bg{
+	opacity: 1;
+}
+
+.btn-img-sng:hover .right-song-icon{
+	visibility: visible;
+}
+
+/*heading Queue start*/
+
+
+/* <!-- bottom player start -->*/
+
+.btm-ply-sng-img{
+	width: 65px;
+	height: 65px;
+}
+
+.btm-ply-sng-img img{
+	width: 100%;
+	height: 100%;
+}
+.pause-con{
+	border-radius: 50%;
+}
+.pltp{
+	width: 100%;
+}
+.pl-cont{
+	width: 80%;
+
+}
+
+.player-range{
+	background-color: lightgreen;
+	width: 100%;
+}
+
+
+
+
+#lightbox{
+	visibility: hidden;
+/*	display: none;*/
+} 
+
+#lightbox:target {
+   visibility: visible;
+   position: absolute;
+   top: 89%;
+   
+}
+
+/* <!-- bottom player start -->*/
+
+/*this styling for the scrollbar which is hidden-start*/
+.zzzz{
+	width: 100%;
+}
+
+/* <!-- bottom player end -->*/
+
+body{
+  overflow: hidden;
+}
+
+.scrl{
+   height: 90vh;
+   overflow: scroll;
+}
+
+/* hide scrollbar */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrl::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.scrl {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/*this styling for the scrollbar which is hidden-end*/
+
+
+
+/*responsive styling-start*/
+
+
+@media only screen and (max-width: 576px) {
+
+	.main-section{
+	flex-direction: column !important;
+	}
+
+	.top-cont-right-left{
+		flex-direction: column !important;
+		padding:0;
+		margin: 0;
+		padding-left:0 ;
+		width: 100%;
+		border: 4px white;
+		
+	}
+
+  body{
+  overflow:scroll !important ;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  position: relative !important;
+
+  }
+
+  .container{
+  	margin:0 !important;
+  	border: 4px white;
+  	width: 100% !important;
+  }
+  .sm-box{
+  	width: 100px;
+ 	height: 150px;
+ 	margin-top:23px ;
+ 	 z-index: 2;
+  }
+  .bg-box{
+  	width: 180px;
+  	height: 200px;
+  	border-radius: 10px;
+  	 z-index: 500;
+  }
+
+  .artst-img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+ }
+ .lt-song-cont{
+ 	justify-content: space-between;
+ }
+
+ .scrl{
+ 	overflow: scroll; !important;
+ 	height: auto !important;
+ }
+
+ .song-det{
+ 	justify-content: baseline !important;
+ 	align-items: center;
+ }
+
+ .let-rel-cont{
+	width: 200px !important;
+	margin-left: 100px;
+
+ }
+
+ .song-box{
+ 	justify-content: space-between;
+ }
+ .secnd-sng{
+ 	margin-left:-22px
+ }
+
+ .secnd-sng2{
+ 	margin-left:-45px
+ }
+
+ .types-img {
+	width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.st-cont{
+	justify-content: center;
+	align-items: center;
+	padding-left: 200px;
+}
+
+.types-cont{
+	width: 510px!important;
+}
+.type-song-cont{
+/*	justify-content: start !important;*/
+}
+.text-on-img{
+	font-size: 10px;
+}
+.text-on-img1{
+	font-size: 10px;
+}
+
+.song-type-cont{
+	width: 510px;
+}
+
+.song-type-image-text1{
+	font-size: 15px;
+}
+
+.song-type-image-text2{
+	font-size: 15px;
+}
+
+.song-contrr{
+	width: 510px;
+}
+
+.song-col{
+	width: 45px;
+	height: 45px;
+}
+.sng-name p{
+  font-size: 8px !important;
+}
+.qcont{
+	width: 510px;
+}
+
+.sng-three{
+	margin-right: 120px;
+}
+main{
+	position: absolute !important;
+}
+.zzzz{
+	width: 600px !important;
+	z-index: 100000;
+	top:530px!important;
+	position: fixed !important;
+}
+
+.sng-pos-btm{
+     visibility: hidden;
+}
+
+.vol-btm{
+	visibility: hidden;
+}
+}
+
+
+
+/*responsive styling-end*/

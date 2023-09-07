@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>music player</title>
+</head>
+<body class="background" >
+
+
+	  <!-- music player header section -->
+
+     <header class="background text-light sticky-top m "> 
+      <nav class="navbar navbar-expand-lg   ">
+  <div class="container-fluid navg">
+    <a class="navbar-brand text-light d-flex" href="#"><img class="rounded-circle hed-logo ms-1 me-2" src="hed-img.png">
+      <div class="d-flex flex-column  ">
+        <h5 class="p-0 m-0">Ninja</h5>
+        <h2 class="p-0 m-0">Studio</h2>
+      </div>
+    </a>
+    
+    <button class="navbar-toggler  bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto  mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light p-5" aria-current="page" href="#">Favourites</a>
+      </ul>
+      <form class="d-flex px-2" role="search">
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+        <div class="d-flex  ser-br">
+        	<button class="btn  " type="submit"><i class="fa-solid fa-magnifying-glass text-light"></i></button> 
+        	 <input class="  me-2 bg-transparent"placeholder="Search" type="text" id="fname" name="fname"><br><br>
+        	 <button class="btn text-secondary " type="submit"><i class="fa-solid fa-microphone fa-lg mb  pt-2"></i></button> 
+        	
+        </div>
+      </form>
+      <i class="fa-solid fa-bell fa-2xl mx-4"></i>
+      <img class="rounded-circle hed-logo mx-4"src="profile__pic.jpg">
+    </div>
+  </div>
+</nav>
+      </header>
+
+     <!-- music player header section end -->
+
+     <!-- main section start here -->
+        <main class="main-section background position-absolute">
+
+          <div class="container d-flex  background top-cont-right-left  ">
+          
+     <!-- main -left  side-start here -->
+            <div class="col-12 scrl col-sm-8" >
+
+              <div class="row pt-4 pb-5  d-flex   ">
+                <div class="d-flex position-relative">
+                   <div class=" sm-box hed-image-sec left-hed-img ">
+                      <img src="front_hed_1.jpg">
+                   </div>
+                   <div class=" bg-box hed-image-sec  ">
+                        <img src="front_hed_2.jpg">
+                   </div>
+                   <div class=" sm-box hed-image-sec right-hed-img ">
+                        <img src="front_hed_3.jpg">
+
+                   </div>
+
+                   </div>
+                
+              </div>
+                 <h4 class="text-white">Leatest Release</h4>
+            
+
+               <div class="row pt-5 d-flex justify-content-md-around align-items-center g-5 justify-content-between let-rel-cont ">
+
+                <div class="col-12 col-sm-6 d-flex justify-content-around ps-0 ms-0 song-box" >
+                  <div class="d-flex  sng-three ">
+                    <div class="me-4 position-relative song-cont "> 
+                       
+                          <img class="song-img" src="mein-sec-song.jpg " height="120px">
+                       
+                       <div class="hov-lay">
+                         <!-- this div is just for the layer for the hover effect  -->
+                       </div>
+                        <div class="song-icon">
+                          <a href="#lightbox ">
+                           <i class="fa-solid fa-play text-white play-icon fa-2xl position-absolute top-50 start-50  "></i>
+                          </a>
+                        </div>
+                     </div>
+                    <div class="d-flex flex-column me-5 align-items-center justify-content-center">
+                      <h5 class="text-white">onsim</h5>
+                      <p class="text-white-50">Aug 2017</p>
+                    </div>
+                    
+
+                  </div>
+                  <div class="d-flex flex-column ">
+                    <div class="dropdown">
+                      <button class="background text-light p-0 d-flex justify-content-baseline align-items-banseline border border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp <i class="fa-solid fa-ellipsis fa-xl "></i></button>
+                       <ul class="dropdown-menu">
+                          <li><a class="dropdown-item d " href="#"><i class="fa-solid fa-play"></i>&nbsp&nbsp Play Now </a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>&nbsp&nbspAdd To Queue</a></li>
+                           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bars"></i>&nbsp&nbsp Add To  Favourites</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info"></i>&nbsp&nbsp Get Info</a></li>
+                          
+                       </ul>
+                  </div>
+                   <div class="text-white-50 ">
+                     <p>
+                       4:44
+                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6  d-flex justify-content-around pe-0 secnd-sng">
+                  <div class="d-flex sng-three">
+                    <div class="me-4 position-relative song-cont "> 
+                       
+                          <img class="song-img" src="mein-sec-song.jpg " height="120px">
+                       
+                       <div class="hov-lay">
+                         <!-- this div is just for the layer for the hover effect  -->
+                       </div>
+                        <div class="song-icon">
+                          <a href="#lightbox">
+                           <i class="fa-solid fa-play text-white play-icon fa-2xl position-absolute top-50 start-50  "></i>
+                          </a>
+                        </div>
+                     </div>
+                    <div class="d-flex flex-column me-5 align-items-center justify-content-center">
+                      <h5 class="text-white">onsim</h5>
+                      <p class="text-white-50">Aug 2017</p>
+                    </div>
+                    
+
+                  </div>
+                  <div class="d-flex flex-column ">
+                    <div class="dropdown">
+                      <button class="background text-light p-0 d-flex justify-content-baseline align-items-banseline border border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp <i class="fa-solid fa-ellipsis fa-xl "></i></button>
+                       <ul class="dropdown-menu">
+                          <li><a class="dropdown-item d " href="#"><i class="fa-solid fa-play"></i>&nbsp&nbsp Play Now </a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>&nbsp&nbspAdd To Queue</a></li>
+                           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bars"></i>&nbsp&nbsp Add To  Favourites</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info"></i>&nbsp&nbsp Get Info</a></li>
+                          
+                       </ul>
+                  </div>
+                   <div class="text-white-50 ">
+                     <p>
+                       4:44
+                     </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+             
+
+
+
+
+            <div class="row pt-5 d-flex justify-content-around align-items-center g-5 let-rel-cont ">
+
+                <div class="col-12 col-sm-6 d-flex justify-content-around ps-0 ms-0">
+                  <div class="d-flex sng-three">
+                    <div class="me-4 position-relative song-cont "> 
+                       
+                          <img class="song-img" src="mein-sec-song.jpg " height="120px">
+                       
+                       <div class="hov-lay">
+                         <!-- this div is just for the layer for the hover effect  -->
+                       </div>
+                        <div class="song-icon">
+                          <a href="#lightbox ">
+                           <i class="fa-solid fa-play text-white play-icon fa-2xl position-absolute top-50 start-50  "></i>
+                          </a>
+                        </div>
+                     </div>
+                    <div class="d-flex flex-column me-5 align-items-center justify-content-center">
+                      <h5 class="text-white">onsim</h5>
+                      <p class="text-white-50">Aug 2017</p>
+                    </div>
+                    
+
+                  </div>
+                  <div class="d-flex flex-column ">
+                    <div class="dropdown">
+                      <button class="background text-light p-0 d-flex justify-content-baseline align-items-banseline border border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp <i class="fa-solid fa-ellipsis fa-xl "></i></button>
+                       <ul class="dropdown-menu">
+                          <li><a class="dropdown-item d " href="#"><i class="fa-solid fa-play"></i>&nbsp&nbsp Play Now </a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>&nbsp&nbspAdd To Queue</a></li>
+                           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bars"></i>&nbsp&nbsp Add To  Favourites</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info"></i>&nbsp&nbsp Get Info</a></li>
+                          
+                       </ul>
+                  </div>
+                   <div class="text-white-50 ">
+                     <p>
+                       4:44
+                     </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6  d-flex justify-content-around pe-0 secnd-sng2">
+                  <div class="d-flex sng-three">
+                    <div class="me-4 position-relative song-cont "> 
+                       
+                          <img class="song-img" src="mein-sec-song.jpg " height="120px">
+                       
+                       <div class="hov-lay">
+                         <!-- this div is just for the layer for the hover effect  -->
+                       </div>
+                        <div class="song-icon">
+                          <a href="#lightbox">
+                           <i class="fa-solid fa-play text-white play-icon fa-2xl position-absolute top-50 start-50  "></i>
+                          </a>
+                        </div>
+                     </div>
+                    <div class="d-flex flex-column me-5 align-items-center justify-content-center">
+                      <h5 class="text-white">onsim</h5>
+                      <p class="text-white-50">Aug 2017</p>
+                    </div>
+                    
+
+                  </div>
+                  <div class="d-flex flex-column ">
+                    <div class="dropdown">
+                      <button class="background text-light p-0 d-flex justify-content-baseline align-items-banseline border border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp <i class="fa-solid fa-ellipsis fa-xl "></i></button>
+                       <ul class="dropdown-menu">
+                          <li><a class="dropdown-item d " href="#"><i class="fa-solid fa-play"></i>&nbsp&nbsp Play Now </a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>&nbsp&nbspAdd To Queue</a></li>
+                           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bars"></i>&nbsp&nbsp Add To  Favourites</a></li>
+                             <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-info"></i>&nbsp&nbsp Get Info</a></li>
+                          
+                       </ul>
+                  </div>
+                   <div class="text-white-50 ">
+                     <p>
+                       4:44
+                     </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+             
+
+
+     <!-- artist section start  -->
+             <div class="row pt-5 ps-0 pe-0">
+              <h4 class="text-white">Popular Artists</h4>
+
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        
+                         <div class="carousel-item active d-flex">
+
+                          <div class="text-light align-items-center d-flex  align-items-center flex-column">
+                         <a  href="artist-page.html"  target="" >
+                          <div class="rounded-circle mx-2 text-light align-items-center d-flex  align-items-center flex-column " >
+                            <img src="./artistimg/1-artst.jpg" class="d-block w-100 artst-img " alt="..." >
+                            <div class=" artst-hov">
+                              <!-- this layer is onlu for the hovr effect -->
+                            </div>
+                          </div>
+                          </a>
+                           <p>Lucky Ali</p>
+                        </div>
+
+                          <div class="text-light align-items-center d-flex  align-items-center flex-column">
+                            <a  href="artist-page.html"  target="" >
+                          <div class="rounded-circle mx-2 text-light align-items-center d-flex  align-items-center flex-column " >
+                            <img src="./artistimg/2-artst.jpg" class="d-block w-100 artst-img " alt="..." >
+                           </div>
+                            </a>
+                           <p>Ritviz</p>
+                          </div>
+
+                          <div class="text-light align-items-center d-flex  align-items-center flex-column">
+                         <a  href="artist-page.html"  target="" >
+                          <div class="rounded-circle mx-2 text-light align-items-center d-flex  align-items-center flex-column" >
+                            <img src="./artistimg/3-artst.jpg" class="d-block w-100 artst-img " alt="..." >
+                           </div>
+                          </a>
+                          <p>Raj Burman</p>
+                        </div> 
+
+                         <div class="text-light align-items-center d-flex  align-items-center flex-column">
+                          <a  href="artist-page.html"  target="" >
+                          <div class="rounded-circle mx-2 text-light align-items-center d-flex  align-items-center flex-column" >
+                            <img src="./artistimg/4-artst.jpg" class="d-block w-100 artst-img " alt="..." >
+                            
+                            </div>
+                          </a>
+                          <p>The Local Train</p>
+                        </div>
+                          
+                          <div class="text-light align-items-center d-flex  align-items-center flex-column">
+                            
+                              <a href="artist-page.html"  target="" >
+
+                          <div class="rounded-circle mx-2 " >
+                            <img src="./artistimg/5-artst.jpg" class="d-block w-100 artst-img " alt="..." >
+                            
+                          </div>
+                          </a>
+                             <p>Arijit Singh</p>
+                          </div>
+                           
+                           <div class="text-light align-items-center d-flex  align-items-center flex-column">
+                           <a  href="artist-page.html"  target="" >
+                            <div class="rounded-circle mx-2 text-light align-items-center d-flex  align-items-center flex-column" >
+                            <img src="./artistimg/6-artst.jpg" class="d-block w-100 artst-img " alt="..." >
+                            
+                            </div>
+                           </a>
+                           <p>Harsha Pravin</p>
+                            </div>
+                          
+                        </div>
+                       </div>
+                       </div>
+                     </div>
+     <!-- artist section end  -->
+
+     <!-- category-section-start -->
+          <div class=" row d-flex  pt-5 mt-2 types-cont">
+            <!-- <div class="col-4"> -->
+              
+           
+            <div class=" col-12 col-sm-2 pb-4 st-cont">
+
+            <div class="position-relative d-flex pb-3">
+
+             <div class="bg-warning flayer position-relative shadow">
+              </div>
+              <div  class=" position-absolute slayer bg-warning shadow"> 
+                
+              </div>
+               <div  class=" position-absolute tlayer shadow d-flex flex-column justify-content-center align-items-center "> 
+                 <div class=""> 
+                   <i class="fa-solid fa-compact-disc fa-2xl text-white mt-4" ></i>
+                      </div> 
+                <div class="">
+                   <p class="text-white mt-2 fw-bolder">Station</p>
+                </div>
+                  
+                
+              </div>
+          </div>
+        </div> 
+
+
+
+          <div  class="col-12 col-sm-10 ps-2 pe-3">
+            <div class="d-flex align-items-center justify-content-around type-song-cont">  
+           <a class="text-decoration-none text-light" href="www.google.com" type="button">
+                <div class="position-relative">
+                <div class="    ">
+               <img src="./types/6.jpg " class="types-img">
+               </div>
+               <div class="over-lay bg-danger  "></div>
+               <div class="text-on-img">
+                <p>Love</p>
+               </div>
+             </div>
+               
+            </a>
+           
+           <a class="text-decoration-none text-light" href="www.google.com" type="button">
+                <div class="position-relative">
+                <div class="    ">
+               <img src="./types/1.jpg " class="types-img">
+               </div>
+               <div class="over-lay bg-warning-subtle  "></div>
+               <div class="text-on-img">
+                <p>Retro</p>
+               </div>
+             </div>
+               
+            </a>
+           
+             <a class="text-decoration-none text-light" href="www.google.com" type="button">
+                <div class="position-relative">
+                <div class="    ">
+               <img src="./types/2.jpg " class="types-img">
+               </div>
+               <div class="over-lay bg-secondary  "></div>
+               <div class="text-on-img">
+                <p>Chill</p>
+               </div>
+             </div>
+               
+            </a>
+           
+
+           <a class="text-decoration-none text-light" href="www.google.com" type="button">
+                <div class="position-relative">
+                <div class="    ">
+               <img src="./types/3.jpg " class="types-img">
+               </div>
+               <div class="over-lay bg-info  "></div>
+               <div class="text-on-img1">
+                <p>Workout</p>
+               </div>
+             </div>
+               
+            </a>
+           
+
+            <a class="text-decoration-none text-light" href="www.google.com" type="button">
+                <div class="position-relative">
+                <div class="    ">
+               <img src="./types/4.jpg " class="types-img">
+               </div>
+               <div class="over-lay bg-primary  "></div>
+               <div class="text-on-img">
+                <p>Rock</p>
+               </div>
+             </div>
+               
+            </a>
+           
+           
+
+           <a class="text-decoration-none text-light" href="www.google.com" type="button">
+                <div class="position-relative">
+                <div class="    ">
+               <img src="./types/5.jpg " class="types-img">
+               </div>
+               <div class="over-lay bg-warning  "></div>
+               <div class="text-on-img">
+                <p>pop</p>
+               </div>
+             </div>
+               
+            </a>
+           
+           </div>
+  
+          
+        </div>
+
+          </div>
+
+ <!-- category-section-end -->     
+  
+  <!-- song type-start -->
+ <div class="row mt-4 mb-4 song-type-cont">
+
+       <div class=" col-3">
+        <div class="position-relative hov-typ">
+        <div class="song-type-image">
+          <img src="./song-types/1.jpg">
+        </div>
+        <div class=" f-img-back1 abc">
+          </div>
+          
+            <p class="song-type-image-text1 text-light">Party</p>
+          
+        </div>
+        </div>
+
+        <div class=" col-3 ">
+        <div class="position-relative hov-typ">
+        <div class="song-type-image">
+          <img src="./song-types/2.jpg">
+        </div>
+        <div class=" f-img-back2">
+          </div>
+          
+            <p class="song-type-image-text2 text-light">Electronic</p>
+          
+        </div>
+        </div>
+
+        <div class="col-3 ">
+        <div class="position-relative hov-typ">
+        <div class="song-type-image">
+          <img src="./song-types/3.jpg">
+        </div>
+        <div class=" f-img-back3">
+          </div>
+          
+            <p class="song-type-image-text2 text-light">Road Trip</p>
+          
+        </div>
+        </div>
+
+        <div class="col-3 ">
+        <div class="position-relative hov-typ">
+        <div class="song-type-image 4typs ">
+          <img src="./song-types/4.jpg">
+        </div>
+        <div class=" f-img-back3">
+          </div>
+          
+            <p class="song-type-image-text2 text-light">Romatic</p>
+          
+        </div>
+        </div>
+    </div>
+ <!-- song type-end -->
+
+ <!-- hindi-col-song-start-->
+      <div class="row ">
+        <h4 class="text-white ">Leatest Hindi</h4>
+
+        <div class="d-flex justify-content-between song-contrr ">
+         
+         <div>
+           <div class="song-col rounded">
+             <img class="rounded shadow" src="./let-hindi/2.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Uchi wadi</p>
+           <p class="text-white-50 lh-1 ">jul 11,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-hindi/3.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Uchi wadi</p>
+           <p class="text-white-50 lh-1 ">jul 11,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-hindi/4.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Uchi wadi</p>
+           <p class="text-white-50 lh-1 ">jul 11,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-hindi/5.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Uchi wadi</p>
+           <p class="text-white-50 lh-1 ">jul 11,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-hindi/6.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class="lh-1 my-1 fs-6">Uchi wadi</p>
+           <p class="text-white-50 lh-1 ">jul 11,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col ">
+             <img class="rounded shadow"  src="./let-hindi/1.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Uchi wadi</p>
+           <p class="text-white-50 lh-1 ">jul 11,2023</p>
+           </div>
+         </div>
+
+
+        </div>
+
+      </div>
+<!-- hindi-col-song-end-->
+
+<!-- english-col-song-start-->
+          <div class="row  mt-4 mb-1">
+        <h4 class="text-white ">Leatest English</h4>
+
+        <div class="d-flex justify-content-between song-contrr">
+         
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow" src="./let-english/2.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Calm Down</p>
+           <p class="text-white-50 lh-1 ">Feb 28,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-english/3.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class="lh-1 my-1 fs-6">Calm Down</p>
+           <p class="text-white-50 lh-1 ">Feb 28,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-english/4.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class="lh-1 my-1 fs-6">Calm Down</p>
+           <p class="text-white-50 lh-1 ">Feb 28,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-english/5.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Calm Down</p>
+           <p class="text-white-50 lh-1 ">Feb 28,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow"  src="./let-english/6.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Calm Down</p>
+           <p class="text-white-50 lh-1 ">Feb 28,2023</p>
+           </div>
+         </div>
+
+         <div>
+           <div class="song-col">
+             <img class="rounded shadow" src="./let-english/1.jpg">
+           </div>
+           <div class="text-light sng-name">
+           <p class=" lh-1 my-1 fs-6">Calm Down</p>
+           <p class="text-white-50 lh-1 ">Feb 28,2023</p>
+           </div>
+         </div>
+
+
+        </div>
+
+      </div>
+<!-- english-col-song-end-->
+
+       </div>
+
+<!-- main -right side-end here -->
+  <!-- main -left side-start here -->
+    
+     <div class="col-12 col-sm-4  pe-0 scrl  ">
+
+       <div class="row pe-0 ps-3 ">
+         <div class="d-flex justify-content-between align-items-center ">
+          <div>
+            <h4 class="text-white">Queue</h4>
+          </div>
+          
+         <div class="dropdown d-flex align-items-center">
+          <p class="col pt-2 pe-3">Queue</p>
+            <a class="dropdown-toggle border border-0 p-0 m-0  col" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          
+               </a>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item d " href="#">&nbsp&nbsp PlayList </a></li>
+            <li><a class="dropdown-item" href="#">&nbsp&nbsp Favourite Songs</a></li>
+            
+            </ul>
+        </div>
+          </div>
+
+       </div>
+
+       <div class="row qcont">
+
+       
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2  ">
+             <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">01</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/6.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+            
+             <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">02</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/1.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">03</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/2.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">04</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/6.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">05</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/3.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">06</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/4.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">07</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-english/5.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+             
+
+
+            <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">08</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-hindi/6.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+             
+
+             <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">09</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-hindi/5.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">10</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-hindi/4.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+           <div class="d-flex justify-content-between align-items-center ps-5 pe-4 pt-3 pb-2">
+
+              <div class="d-flex justify-content-between align-items-center">
+                 <div class="ps-2 pe-2">
+                   <p class="text-white-50">11</p>
+                 </div>
+                 <a class="text-decoration-none btn-img-sng" type="button" href="#" >
+                  <div class="position-relative">
+                 <div class="right-img">
+                    <img class="rounded shadow" src="./let-hindi/3.jpg">
+                </div>
+                <div class="right-song-bg"></div>
+                <div class="right-song-icon"> <i class="fa-solid fa-play fa-xl text-white"></i></div>
+                </div>
+                 </a>
+
+                <div class="d-flex flex-column   ps-3">
+                  <p class="text-white fs-6 p-0 m-0">Calm Down</p>
+                  <p class="text-white-50 p-0 m-0">Else</p>
+                </div>
+             
+               </div>
+              <a class="text-decoration-none" type="button" href="#" >
+              <div class="text-white-50 pe-2">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+               </a>
+ 
+           </div>
+
+       </div>
+
+
+
+     </div>
+
+      <!-- main -left side-end here -->
+
+
+
+     </div>
+
+   </main>   
+   <!-- main section end -->
+
+   <!-- bottom player start -->
+   
+    <div class="bg-dark  position-absolute zzzz  " id="lightbox">
+      <div class="container ps-0 py-1 pe-0 mr-0">
+        <div class="row ps-0 ">
+
+
+           <div class="col-3 d-flex justify-content-between sng-pos-btm ">
+            <div class="d-flex align-items-center pt-0 pb-0 mt"> 
+              <div class="btm-ply-sng-img">
+                 <img class=" shadow " src="./let-hindi/1.jpg">
+              </div>
+              <div class="ps-2">
+                <div>
+                  <p class="text-white m-0">Unchi Wadi</p>
+                </div>
+                <div>
+                  <p class="text-white-50 m-0">Arijit Singh</p>
+                </div>
+                  </div>
+                </div>
+
+                  <div class="d-flex pt-2 pe-2">
+                    <div class="text-white-50 pe-2">
+                      <a class="text-decoration-none text-white-50 " href="#">
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                    </div>
+                    <div  class="text-white-50 pe-2">
+                      <a class="text-decoration-none text-white-50 " href="#">
+                        <i class="fa-regular fa-circle-xmark fa-sm"></i>
+                      </a>
+                    </div>
+
+                  </div>
+               </div>
+               
+       <!--player-start-section  -->
+
+                 <div class="col-6 ">
+                      <div class="d-flex align-items-center justify-content-center">
+                        <div class="text-white-50 mx-4 ">
+                          <a class="text-decoration-none text-white-50 " href="#">
+                             <i class="fa-solid fa-shuffle"></i>
+                          </a>
+                        </div>
+
+                        <div class="text-light mx-4">
+                           <a class="text-decoration-none text-light " href="#">
+                            <i class="fa-solid fa-backward-step"></i>
+                           </a>
+                        </div>
+                        <div class="text-light mx-4 border  border-light p-2 pause-con">
+                          <a class="text-decoration-none text-light " href="#">
+                            <i class="fa-solid fa-pause fa-sm"></i>
+                          </a>
+                        </div>
+                        <div class="text-light mx-4">
+                          <a class="text-decoration-none text-light " href="#">
+                           <i class="fa-solid fa-forward-step"></i>
+                         </a>
+                        </div>
+                        <div class="text-white-50 mx-4">
+                          <a class="text-decoration-none text-white-50 " href="#">
+                           <i class="fa-solid fa-repeat"></i>
+                         </a>
+                        </div>
+                        
+                      </div>
+
+                      <div class="d-flex pltp align-items-center mb-0 pb-0">
+                        <div>
+                          <p class="text-white-50 pe-3 pb-0">1:39</p>
+                        </div>
+                        <div class="pl-cont p-0 m-0">
+                           <input class="bg-warning player-range" type="range" id="volume" name="volume"  min="0" max="100">
+                        </div>
+
+                        <div class="text-white-50 ps-3 ">
+                          <p>4:44</p>
+                        </div>
+                    </div>
+                   
+                 </div>
+
+      <!--player--section-end  -->
+
+         <!-- volume section-start -->
+
+               <div class="col-3 d-flex justify-end align-items-center pe-0 mr-0 vol-btm">
+
+                  <div class="text-white-50 pe-4 ps-3">
+                    <a class="text-decoration-none text-white-50 " href="#">
+                      <i class="fa-solid fa-bars-staggered"></i>
+                    </a>
+                  </div>
+
+                  <div class="text-white-50 pe-4">
+                    <a class="text-decoration-none text-white-50 " href="#">
+                     <i class="fa-solid fa-server"></i>
+                    </a>
+                  </div>
+                  <div class="d-flex pe-3">
+                    <div class="text-white-50 pe-4">
+                      <a class="text-decoration-none text-white-50 " href="#">
+                         <i class="fa-solid fa-volume-high"></i>
+                       </a>
+                    </div>
+                    <div class="pe-3">
+                        <input class="bg-warning " type="range" id="volume" name="volume"  min="0" max="100">
+                    </div>
+                  </div>
+
+                  <div class="text-white-50">
+                    <a class="text-decoration-none text-white-50 " href="#">
+                      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                  </div>
+                  
+
+            
+               </div>
+
+         <!-- volume section end -->
+
+              </div> 
+       
+      </div>
+
+   </div>
+
+   <!-- bottom player start end -->  
+
+
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
